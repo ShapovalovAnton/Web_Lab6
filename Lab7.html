@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <link type="text/css" rel="stylesheet" href="css\Lab7.css">
+    <script src="js/Lab7.js"></script>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1>Лабораторна робота №1. Javascript</h1>
+            <h2>Виконав студент групи КН-31(3) Шаповалов Антон</h2>
+            <hr>
+        </header>
+        <ul class="menu_main">
+            <li><a href="Lab6.html">Лабораторна робота 1</a> </li>
+            <li><a href="Lab7.html">Лабораторна робота 2</a> </li>
+            <li><a href="">Лабораторна робота 3</a> </li>
+            <li><a href="">Лабораторна робота 4</a> </li>
+            <li><a href="">Лабораторна робота 5</a> </li>
+        </ul>
+        <h2>Завдання 1</h2>
+        <div class="task">
+            У формі є список жанрів та поля для введення назви книги та автора, після натискання Enter при введені автора сформуйте списки книг по кожному жанрів.
+        </div>
+        <form class="form"action="" method="POST"> 
+            <fieldset>
+                <legend> Книжкові дані</legend>
+                <label>Жанр книги &nbsp;
+                    <select class="form_input" id="genre">
+                        <option>Детектив</option>
+                        <option>Фантастика</option>
+                        <option>Трилер</option>
+                        <option>Любовний роман</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Назва книги &nbsp; 
+                    <input class="form_input" id="book_name" type="text"> 
+                </label>
+                <br>
+                <label>
+                    Ім'я автора &nbsp; &nbsp;
+                    <input class="form_input"id="author_name" type="text"> 
+                </label>
+            </fieldset>
+        </form>
+        <div id="book-collection"></div>
+        <h2>Завдання 2</h2>
+        <div class="task">
+            Дана таблиця, при натисканні на кнопку перетворити її у список списків де головним списком будуть рядки, а вкладеним списком їх елементи.
+        </div>
+        <table class="table" id="table1">
+            <tbody>
+                <tr>
+                    <td class="caption"> Тварини</td>
+                    <td> Лисиця</td>
+                    <td> Заєць</td>
+                    <td> Кіт</td>
+                    <td> Їжак</td>
+                    <td> Лелека</td>
+                    <td> Змія</td>
+                </tr>
+                <tr>
+                    <td class="caption"> Рослини</td>
+                    <td> Кульбаба</td>
+                    <td> Кропива</td>
+                    <td> Калина</td>
+                    <td> Дуб</td>
+                    <td> Тополя</td>
+                    <td> Соняшник</td>
+                </tr>
+                <tr>
+                    <td class="caption"> Гриби</td>
+                    <td> Мухомор</td>
+                    <td> Біла поганка</td>
+                    <td> Лисички</td>
+                    <td> Печериця</td>
+                    <td> Білий гриб</td>
+                    <td> Кордицепс</td>
+                </tr>
+                <tr>
+                    <td class="caption"> Віруси</td>
+                    <td> Кишкова паличка</td>
+                    <td> Сальмонела</td>
+                    <td> Грип</td>
+                    <td> ВІЛ</td>
+                    <td> Віспа</td>
+                    <td> Лактобактерія</td>
+                </tr>
+            </tbody>
+                </table>
+        <button class="button" onclick="display()">
+            Перетворити на список
+        </button>
+        <div id="result"></div>
+    </main>
+</body>
+</html>
