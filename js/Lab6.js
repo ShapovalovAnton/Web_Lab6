@@ -4,49 +4,49 @@ arrConference[0] = {
     name: "Сучасна фізика",
     sections: ["Фізика вчора", "Фізика сьогодні", "Фізика завтра"],
     university: "КПІ",
-    startDate: new Date("2024-10-28")
+    startDate: new Date("2024-11-05")
 };
 
 arrConference[1] = {
     name: "Алгоритмізація і програмування",
     sections: ["Алгоритмізація", "Програмування", "Аналіз"],
     university: "КНУ",
-    startDate: new Date("2024-10-26")
+    startDate: new Date("2024-11-03")
 };
 
 arrConference[2] = {
     name: "Міжнародна конференція з біомедичних наук",
     sections: ["Загадка скелета", "Таємниця печінки", "Секрет мозку"],
     university: "ХНМУ",
-    startDate: new Date("2024-10-27")
+    startDate: new Date("2024-11-04")
 };
 
 arrConference[3] = {
     name: "Машинобудування",
     sections: ["Машина та людина", "Машина та технології", "Машина та машина"],
     university: "ДДМА",
-    startDate: new Date("2024-10-25")
+    startDate: new Date("2024-11-02")
 };
 
 arrConference[4] = {
     name: "Економіка України",
     sections: ["Економіка України", "Економіка міст", "Економіка сіл"],
     university: "КНЕУ",
-    startDate: new Date("2024-10-30")
+    startDate: new Date("2024-11-07")
 };
 
 arrConference[5] = {
     name: "Екологія та природокористування",
     sections: ["Екологічний менеджмент", "Охорона навколишнього середовища", "Екологічна політика"],
     university: "ОНУ",
-    startDate: new Date("2024-10-25")
+    startDate: new Date("2024-11-02")
 };
 
 arrConference[6] = {
     name: "Туризм",
     sections: ["Готелі", "Ресторани", "Аеропорти"],
     university: "КПІ",
-    startDate: new Date("2024-10-26")
+    startDate: new Date("2024-11-03")
 };
 
 function diff_dates (date){
@@ -59,18 +59,26 @@ return DaysDiff;
 // Функція виведення окремого запису масиву
 function vivod(item, i, array) {
     var diffDays = diff_dates(item.startDate);
-
+    html += "<tr>";
     // Додавання даних конференції до таблиці
     html += "<td>" + item.name + "</td>";
     html += "<td>" + item.startDate.toLocaleDateString('uk-UA') + "</td>";
     html += "<td>" + item.university + "</td>";
     if (diffDays>0) {
         html += "<td>" + "Конференція почнеться через " + diffDays + " днів"+"</td>";}
-        else if (diffDays<-2){html += "<td>" + "Конференція завершилась " + diffDays + " днів назад"+"</td>";}
-        else if (diffDays!=0) {html += "<td>" + "До кінця конференції залишилось " + Math.abs(diffDays) + " дні"+"</td>";}
-        else {html += "<td>" + "Сьогодні останній день"+"</td>"}
-    if(diffDays>0 || diffDays<-2){html += "<td>" + "-"+"</td>";}
-    else {html += "<td>" + item.sections[Math.abs(diffDays)]+"</td>";}
+    else if (diffDays<-2)
+        {html += "<td>" + "Конференція завершилась " + (Math.abs(2+diffDays)) + " днів назад"+"</td>";}
+    else if (diffDays==-2) 
+        {html += "<td>" + "Конференція завершується сьогодні!"+"</td>";}
+    else if (diffDays==-1)
+        {html += "<td>" + "Конференція завершується завтра!"+"</td>";}
+    else 
+    {html += "<td>" + "До кінця конференції залишилось 2 дні!"+"</td>"}
+
+    if(diffDays>0 || diffDays<-2)
+        {html += "<td>" + "-"+"</td>";}
+    else 
+    {html += "<td>" + item.sections[(Math.abs(diffDays))]+"</td>";}
     html += "</tr>";
 }
 
