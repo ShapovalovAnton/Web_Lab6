@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <link type="text/css" rel="stylesheet" href="css\Lab8.css">
+    <script src="js/Lab8.js"></script>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1>Лабораторна робота №3. Javascript</h1>
+            <h2>Виконав студент групи КН-31(3) Шаповалов Антон</h2>
+            <hr>
+        </header>
+        <ul class="menu_main">
+            <li><a href="Lab6.html">Лабораторна робота 1</a> </li>
+            <li><a href="Lab7.html">Лабораторна робота 2</a> </li>
+            <li><a href="Lab8.html">Лабораторна робота 3</a> </li>
+            <li><a href="">Лабораторна робота 4</a> </li>
+        </ul>
+        <h2>Завдання на лабораторну роботу 1</h2>
+        <div class="task">
+            Базовий клас: Телефон (поле: кількість функцій -k.)
+            Метод: Вартість: 40ln (k)
+            Нащадок: Мобільний (поле - модель)
+            Зміни в нащадках: Збільшити вартість в 3 рази.
+        </div>
+        <form class="form"action="" method="POST"> 
+            <fieldset>
+                <legend> Телефон</legend>
+                <label>
+                    Кількість функцій &nbsp; 
+                    <input class="form_input" id="phone_func" type="number"> 
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend> Мобільний телефон</legend>
+                <label>
+                    Кількість функцій &nbsp; 
+                    <input class="form_input" id="mobile_phone_func" type="number"> 
+                </label>
+                <br>
+                <label>
+                    Назва моделі &nbsp; &nbsp;
+                    <input class="form_input" id="model_name" type="text"> 
+                </label>
+            </fieldset>
+        </form>
+        <div class="buttons">
+            <button id="result" class="button" onclick="displayPhonePrice()">
+                Ціна
+            </button>
+            <button class="button button_mobile" onclick="displayMobilePhonePrice()">
+                Ціна
+            </button>
+        </div>
+        <div class="results">
+            <div id="resultPhone">
+            </div>
+            <div id="resultMobilePhone">
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

@@ -16,17 +16,11 @@ body{
     font-size: 25px;
 }
 
-@media (max-width:1313px){
-    #table1 td{
-        font-size: 8px;
-    }
 
-}
-
-@media (max-width:500px){
+@media (max-width:830px){
 
     label .form_input{
-        font-size: 16px;
+        font-size: 9px;
     }
 
 }
@@ -42,6 +36,7 @@ body{
     position: relative;
     left:1%;
     transition: all 0.3s easy out;
+    margin-bottom: 20px;
 }
 
 .button:hover{
@@ -75,22 +70,9 @@ body{
    
 }
 
-.table{
-    margin-top: 15px;
-}
-.table td{
-border: 1px solid black;
-font-size: 36px;
-text-align: center;
-}
-
-.caption{
-    font-weight: bold;
-    color: rgb(100, 73, 255);
-}
-
 .form{
     font-size: 32px;
+    display: flex;
 }
 
 .form label{
@@ -103,5 +85,16 @@ text-align: center;
     border-radius: 6px;
     font-weight: bold;
     font-size: 26px;
+}
+
+.buttons{
+    display: flex;
+    gap: 43dvw;
+}
+.results{
+    display: flex;
+}
+#resultPhone, #resultMobilePhone{
+    flex: 1;
 }
 

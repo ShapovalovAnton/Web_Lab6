@@ -4,49 +4,49 @@ arrConference[0] = {
     name: "Сучасна фізика",
     sections: ["Фізика вчора", "Фізика сьогодні", "Фізика завтра"],
     university: "КПІ",
-    startDate: new Date("2024-11-05")
+    startDate: new Date("2024-11-16")
 };
 
 arrConference[1] = {
     name: "Алгоритмізація і програмування",
     sections: ["Алгоритмізація", "Програмування", "Аналіз"],
     university: "КНУ",
-    startDate: new Date("2024-11-03")
+    startDate: new Date("2024-11-14")
 };
 
 arrConference[2] = {
     name: "Міжнародна конференція з біомедичних наук",
     sections: ["Загадка скелета", "Таємниця печінки", "Секрет мозку"],
     university: "ХНМУ",
-    startDate: new Date("2024-11-04")
+    startDate: new Date("2024-11-15")
 };
 
 arrConference[3] = {
     name: "Машинобудування",
     sections: ["Машина та людина", "Машина та технології", "Машина та машина"],
     university: "ДДМА",
-    startDate: new Date("2024-11-02")
+    startDate: new Date("2024-11-13")
 };
 
 arrConference[4] = {
     name: "Економіка України",
     sections: ["Економіка України", "Економіка міст", "Економіка сіл"],
     university: "КНЕУ",
-    startDate: new Date("2024-11-07")
+    startDate: new Date("2024-11-18")
 };
 
 arrConference[5] = {
     name: "Екологія та природокористування",
     sections: ["Екологічний менеджмент", "Охорона навколишнього середовища", "Екологічна політика"],
     university: "ОНУ",
-    startDate: new Date("2024-11-02")
+    startDate: new Date("2024-11-13")
 };
 
 arrConference[6] = {
     name: "Туризм",
     sections: ["Готелі", "Ресторани", "Аеропорти"],
     university: "КПІ",
-    startDate: new Date("2024-11-03")
+    startDate: new Date("2024-11-14")
 };
 
 function diff_dates (date){

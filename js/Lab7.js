@@ -3,9 +3,12 @@
         var a = [];
 
         function generate_arr() {
+            //Отримаємо табличку
             let table = document.getElementById("table1");
+            //Визначаємо розміри
             let r = table.rows.length;
             let c = table.rows[0].cells.length;
+            //Заповнюємо масив
             let arr = [];
 
             for (let i = 0; i < r; i++) {
@@ -57,6 +60,7 @@
              });
 
              function addBook(genre, bookName, authorName) {
+                //Отримаємо контейнер, де будемо виводити результат
                           collectionDiv = document.getElementById("book-collection");
                 
                           // Шукаємо список для даного жанру або створюємо новий
